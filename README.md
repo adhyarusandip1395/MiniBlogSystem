@@ -49,11 +49,4 @@ You can test the API using the included Postman collection file.
 | PUT    | `/api/posts/{id}` | Update a post (owner only) |
 | DELETE | `/api/posts/{id}` | Delete post (owner only)   |
 
-| Method | Endpoint          | Description                |
-| ------ | ----------------- | -------------------------- |
-| GET    | `/api/posts`      | List all posts (paginated) |
-| GET    | `/api/posts/{id}` | View single post           |
-| POST   | `/api/posts`      | Create a post (auth)       |
-| PUT    | `/api/posts/{id}` | Update a post (owner only) |
-| DELETE | `/api/posts/{id}` | Delete post (owner only)   |
 

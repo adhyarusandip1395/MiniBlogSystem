@@ -31,7 +31,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/posts', [PostController::class, 'store'])->name('post.store');
     Route::put('/posts/{id}', [PostController::class, 'update'])->name('post.update');
     Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('post.delete');
-});
 
-Route::get('/posts/{id}/comments', [CommentController::class, 'index']);
-Route::middleware('auth:sanctum')->post('/posts/{id}/comments', [CommentController::class, 'store']);
+    
+});
+Route::post('/posts/{id}/comments', [CommentController::class, 'store'])->name('comment.store');
+
+// Route::get('/posts/{id}/comments', [CommentController::class, 'index']);
+// Route::middleware('auth:sanctum')->post('/posts/{id}/comments', [CommentController::class, 'store']);

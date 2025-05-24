@@ -14,11 +14,11 @@
 @section('content')
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="card login-container shadow p-4">
-            <h4 class="text-center mb-4">Add Post</h4>
+            <h4 class="text-center mb-4">Create Post</h4>
            <form action="{{ route('post.store') }}" method="post">
                 @csrf
                 <div class="mb-3">
-                    <label for="title" class="form-label">Title</label>
+                    <label for="title" class="form-label">Title <span class="text-danger">*</span></label>
                     <input type="text" name="title" value="{{ old('title') }}" class="form-control" id="title" placeholder="Enter Title" autocomplete="off" >
                     @error('title')
                         <span class="text-danger ml-2">
@@ -27,7 +27,7 @@
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label for="body" class="form-label">Body</label>
+                    <label for="body" class="form-label">Body <span class="text-danger">*</span></label>
                     <textarea name="body" value="{{ old('body') }}" class="form-control" id="body" placeholder="Enter body" autocomplete="off" ></textarea>
                     @error('body')
                         <span class="text-danger ml-2">
