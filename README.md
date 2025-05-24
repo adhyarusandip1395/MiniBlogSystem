@@ -14,6 +14,12 @@ php artisan key:generate
 # 4. Run migrations
 php artisan migrate
 
+# 5. Run the app
+php artisan serve
+
+
+
+
 
 ## 🧪 API Testing with Postman
 
