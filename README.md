@@ -34,19 +34,4 @@ You can test the API using the included Postman collection file.
 4. For protected routes, add an **Authorization header**:
 
 
-# API Endpoints
-
-| Method | Endpoint        | Description         |
-| ------ | --------------- | ------------------- |
-| POST   | `/api/register` | Register a user     |
-| POST   | `/api/login`    | Login and get token |
-
-| Method | Endpoint          | Description                |
-| ------ | ----------------- | -------------------------- |
-| GET    | `/api/posts`      | List all posts (paginated) |
-| GET    | `/api/posts/{id}` | View single post           |
-| POST   | `/api/posts`      | Create a post (auth)       |
-| PUT    | `/api/posts/{id}` | Update a post (owner only) |
-| DELETE | `/api/posts/{id}` | Delete post (owner only)   |
-
 
